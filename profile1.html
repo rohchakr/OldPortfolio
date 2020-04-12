@@ -1,0 +1,47 @@
+<html>
+<meta charset="UTF-8">
+<head>
+	<script src="jquery-3.5.0.min.js"></script>
+        <!-- LinkedIn Plugin -->
+	<script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+<style>
+body {
+	background-color: #f2f2f2;
+}
+#welcome-div {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	/*background-color: white;*/ /* for testing */
+     	background-color: #f2f2f2;	
+        z-index: 1;
+}
+</style>
+</head>
+<body>
+<div id="welcome-div">Welcome...</div>
+<div id="linkedin-profile-content"> 
+        <!-- LindedIn profile badges -->
+        <!-- Badge 1 Large (330 px wide) -->
+	<!--<div class="LI-profile-badge"  data-version="v1" data-size="large" data-locale="en_US" data-type="horizontal" data-theme="light" data-vanity="rohchakr"><a class="LI-simple-link" href='https://in.linkedin.com/in/rohchakr?trk=profile-badge'>Rohit Chakraborty</a></div>-->
+	<!-- Badge 1 Regular (280 px wide) -->
+	<!--<div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="horizontal" data-theme="light" data-vanity="rohchakr"><a class="LI-simple-link" href='https://in.linkedin.com/in/rohchakr?trk=profile-badge'>Rohit Chakraborty</a></div>-->
+	<!-- Badge 2 Medium (250 px wide) -->
+	<div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="vertical" data-theme="light" data-vanity="rohchakr"><a class="LI-simple-link" href='https://in.linkedin.com/in/rohchakr?trk=profile-badge'>Rohit Chakraborty</a></div>
+        <!-- Badge 2 Large (300 px wide) -->
+	<!--<div class="LI-profile-badge"  data-version="v1" data-size="large" data-locale="en_US" data-type="vertical" data-theme="light" data-vanity="rohchakr"><a class="LI-simple-link" href='https://in.linkedin.com/in/rohchakr?trk=profile-badge'>Rohit Chakraborty</a></div>-->
+</div>
+<script>
+console.log(document.images.length);
+window.onload = function() {
+	console.log(document.images.length);
+	//document.getElementById("welcome-div").style.display = "none";
+};
+$(window).bind('load',function(){console.log(document.images.length);console.log(document.readyState);});
+</script>
+</body>
+</html>
