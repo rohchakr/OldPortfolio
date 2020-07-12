@@ -156,6 +156,7 @@ Did you see the echo statement in `.bash_profile` getting printed? You can execu
 If you have made it up to here, you deserve **👏**. Now, exit from the session of user1 and relogin using `su` command, this time without any option
 
 ```shell
+exit
 su user1
 ```
 
